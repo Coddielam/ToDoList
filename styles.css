@@ -1,0 +1,222 @@
+/* reset css styles agent settings */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    font-size: large;
+    border:none;
+}
+h1 {font-size: xx-large;}
+button {
+    cursor: pointer;
+    transition-duration: 0.2s;
+    border: none;
+    /* background-color: #9CD08F;
+    padding: 10px; */
+    padding: 1px 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.66px;
+    border-color: rgb(170, 170, 170);
+    height: fit-content;
+    outline: none;
+}
+
+button#add-list-btn {
+    background-color: rgb(236, 233, 197);
+    padding: 10px;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 0px 0px 3.5px;
+    color: darkslategray;
+}
+button#add-list-btn:hover{background-color: whitesmoke;}
+button:hover {
+    background-color: whitesmoke;
+    /* border-style: solid; */
+    /* color: goldenrod; */
+}
+button.add-item-btn {
+    margin-left: 7px;
+}
+button.remove-list-btn{background-color: #d84e49ea;}
+button.remove-list-btn:hover{background-color: #d36662ec;}
+
+input:focus {
+    outline: none;
+}
+/* step 1: make flex */
+.to-do-list-title{
+    display: flex;
+    height: 20vh;
+    /* perfect center */
+    justify-content: space-around; /* horizontal */
+    align-items: center; /* vertical */
+    flex-direction: column;
+    background-color: rgba(216, 78, 73, 0.965);
+    outline: none;
+    font-size: 38px;
+}
+#to-do-list-name{
+    color: rgba(245, 245, 245, 0.959);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 47px;
+    margin-top: 17px;
+}
+
+#to-do-list-name-input-field {
+    background-color: transparent;
+}
+
+#to-do-list-name-input-field:focus {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 2px 0px;
+}
+
+main {
+    display: flex;
+    background-color: rgba(73, 73, 73, 0.979);
+    height: 80vh;
+    overflow-x: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffca;
+    min-width: fit-content;
+    height: fit-content;
+    
+    /* min-height: 200px; */
+    padding: 20px;
+    margin: 5px;
+    padding-top: 10px;
+    border-radius: 8px;
+    border-color: rgba(26, 26, 26, 0.952);
+
+    border-style: solid;
+    border-width: 1.5px 3px 5px 3px;
+    /* transition: 0.2s; */
+}
+.list:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.board-name {
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+}
+.list>.board-name:hover{
+    cursor: pointer;
+}
+
+.board-name-input-field, .board-name-input-field:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+
+div.control-field {
+    display: flex;
+    justify-content: space-between;
+}
+.task-input-field {
+    background-color: rgba(224, 224, 224, 0.76);
+    /* border-radius: 5px; */
+    border: none;
+    border-bottom: 2px solid;
+}
+input:focus {
+    /* border: none; */
+    border-bottom: 2px solid;
+    border-color: transparent;
+    background-color: rgba(224, 224, 224, 0.76);
+    /* border-radius: 8px; */
+}
+
+
+button.remove-list-btn {
+    position: relative;
+    top: -35px;
+    right: -15px;
+}
+
+.toDoItemSpace {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(57, 62, 65, 0.527);
+    min-height: 110px;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 3px 5px 55px;
+    margin-top: 10px;
+}
+
+.toDoItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(192, 192, 192, 0.911);
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 350px;
+    margin-bottom: 3.5px;
+}
+.toDoItem:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+.toDoItem:nth-child(even) {
+    background-color: hsla(0, 0%, 100%, 0.904);
+}
+.emojis {
+    width: 27px;
+    height: auto;
+    margin-left: 9px;
+}
+
+p.toDoName {
+    word-break: break-word;
+    padding: 6px;
+    max-width: 277px;
+}
+
+.toDoName:hover{
+    cursor: pointer;
+}
+.change-task-name-input-field {
+    background-color: transparent;
+    max-width: 250px;
+}
+.change-task-name-input-field:focus {
+    background-color: transparent;
+}
+
+.change-task-name-input-field .strikeThruBtn {
+    margin-left: 0px;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 100%;
+    justify-content: space-around;
+    padding: 22px;
+    color: rgb(58, 58, 58);
+}
+button#remove-footer {
+    margin-left: 10px;
+
+}
+a#portfolioLink {
+    color: rgba(0, 89, 255, 0.931);
+}
