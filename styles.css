@@ -30,6 +30,8 @@ button#add-list-btn {
     border-style: solid;
     border-width: 0px 0px 3.5px;
     color: darkslategray;
+    margin-bottom: 11px;
+    margin-top:5px;
 }
 button#add-list-btn:hover{background-color: whitesmoke;}
 button:hover {
