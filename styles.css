@@ -82,6 +82,7 @@ main {
     background-color: rgba(73, 73, 73, 0.979);
     height: 80vh;
     overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .list {
